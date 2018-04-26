@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import { reduxForm } from 'redux-form';
+
 import logo from './logo.svg';
 import './App.css';
+import './style/scss/main.scss';
+
 
 class App extends Component {
   render() {
