@@ -1,0 +1,18 @@
+@import "colours";
+@import "mixins";
+
+%standard-border {
+  border: 2px solid $black;
+  border-radius: 0;
+}
+
+.Select-control {
+  @extend %standard-border;
+
+  .Select.is-focused &,
+  .Select.is-focused:not(.is-open) > & {
+    @extend %standard-border;
+    @include gds-focus;
+  }
+}
+

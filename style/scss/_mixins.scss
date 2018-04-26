@@ -1,0 +1,52 @@
+@mixin background_size($size) {
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
+}
+
+@mixin transform_scale($factor) {
+    -ms-transform: scale($factor); /* IE */
+    -moz-transform: scale($factor); /* FF */
+    -webkit-transform: scale($factor); /* Safari and Chrome */
+    -o-transform: scale($factor); /* Opera */
+}
+
+@mixin apply_to_cells($class_name) {
+    table.#{$class_name} > {
+        thead >, tbody >, tfoot > {
+            tr > {
+                td, th {
+                    @content;
+                }
+            }
+        }
+    }
+}
+
+@mixin bootstrap_color_override($semantic_label, $color, $hover_color: none) {
+    .text-#{$semantic_label} {
+        color: $color;
+    }
+
+    .label-#{$semantic_label}, .badge-#{$semantic_label}, .btn-#{$semantic_label}, .bg-#{$semantic_label} {
+        background-color: $color;
+    }
+
+    @if $hover_color != none {
+        a:hover.btn-#{$semantic_label}, button:hover.btn-#{$semantic_label}, button[disabled]:hover.btn-#{$semantic_label} {
+            background-color: $hover_color;
+        }
+
+        /* set hover colour to be the same as normal colour if disabled */
+        button[disabled]:hover.btn-#{$semantic_label} {
+            background-color: $color;
+        }
+    }
+}
+
+@mixin gds-focus {
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 0 2px $focus-colour;
+    box-shadow: 0 0 0 2px $focus-colour;
+}

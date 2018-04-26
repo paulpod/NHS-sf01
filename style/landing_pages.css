@@ -1,0 +1,68 @@
+.mb-large {
+    margin-bottom: 40px;
+}
+
+.centered-block {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#circle {
+    background: #005eb8;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+}
+
+#circle-inner {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    font-size: 100px;
+}
+
+
+@keyframes customrotation {
+    from {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+
+.animate-rotate {
+    -webkit-animation-duration: 60s;
+    -o-animation-duration: 60s;
+    -moz-animation-duration: 60s;
+    animation-duration: 60s;
+
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -o-transform-origin: center center;
+    -ms-transform-origin: center center;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+
+    animation-name: customrotation;
+    -webkit-animation-name: customrotation;
+    -moz-animation-name: customrotation;
+    -o-animation-name: customrotation;
+
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}

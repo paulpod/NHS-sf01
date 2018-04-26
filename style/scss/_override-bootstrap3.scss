@@ -1,0 +1,24 @@
+@import "colours";
+@import "mixins";
+
+.form-control {
+  max-width: 300px;
+  border-width: 2px;
+
+  .has-success &, .has-error &, .has-warning & {
+    border-color: $black;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  &:focus, .has-success &:focus, .has-error &:focus, .has-warning &:focus {
+    @include gds-focus;
+  }
+
+}
+
+.control-label {
+  .has-success &, .has-error &, .has-warning & {
+    color: $text-colour;
+  }
+}
