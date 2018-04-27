@@ -53,7 +53,7 @@ class SearchForm extends Component {
             <form onSubmit={handleSubmit} onKeyPress={this.onKeyPress}>
                 <div>
                     <label>Find a type of service</label>
-                    <div><p>Example: Urgent Care Centre, Pharmacy</p></div>
+                    <div><p>Example: Hello, Urgent Care Centre, Pharmacy</p></div>
                     <div>
                         <CheckboxDropdownSelect
                             data={this.props.serviceTypes}
@@ -135,5 +135,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(state => ({
-    
+    initialValues: defaultData,
+    geolocation: state.geolocation
 }), mapDispatchToProps)(searchReduxForm);
