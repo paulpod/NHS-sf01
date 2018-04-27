@@ -13,6 +13,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 // Needed to generate main CSS file
 import './style/scss/main.scss';
+import './bootstrap.min.css';
 import './main.css';
 
 

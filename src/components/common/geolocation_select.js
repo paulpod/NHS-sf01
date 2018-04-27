@@ -37,7 +37,7 @@ class GeolocationSelect extends Component {
         }
         return (
             <div>
-                <img src="/assets/images/location-arrow-grey.svg" alt="triangle with all three sides equal" height="20px"/>
+                <img src="./assets/images/location-arrow-grey.svg" alt="triangle with all three sides equal" height="20px"/>
                 &nbsp;&nbsp;{description}
                 <button id="resetOrTryAgainLocationButton" type="button" className="btn btn-link" onClick={onClickHandler}>
                     {linkText}
@@ -52,7 +52,7 @@ class GeolocationSelect extends Component {
         } else {
             return (
                 <div>
-                    <img src="/assets/images/location-arrow-blue.svg" alt="triangle with all three sides equal" height="20px"/>
+                    <img src="./assets/images/location-arrow-blue.svg" alt="triangle with all three sides equal" height="20px"/>
                     <button id="getLocationButton" type="button" className="btn btn-link" onClick={this.getCurrentPosition}>
                         Use my current location
                     </button>
