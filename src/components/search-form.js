@@ -77,7 +77,7 @@ class SearchForm extends Component {
                     />
                 </div>
                 <div>
-                    <Button id="continueButton" type="submit" bsSize="medium" bsStyle="success" disabled={submitting}>
+                    <Button id="continueButton" type="submit" bsSize="small" bsStyle="success" disabled={submitting}>
                         Continue<Glyphicon glyph="chevron-right" />
                     </Button>
                 </div>

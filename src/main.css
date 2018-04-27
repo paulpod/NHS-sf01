@@ -570,7 +570,7 @@
 
 @media (min-resolution: 192dpi) {
   .global-footer__inner:before {
-    background-image: url("./assets/images/logotype-nhs-colour@2x.png");
+    //background-image: url("./assets/images/logotype-nhs-colour@2x.png");
     background-size: 79px 32px;
   }
 }
@@ -624,7 +624,7 @@ footer {
 }
 
 .navbar-header {
-  //background: url("../../assets/images/logotype-nhs-colour.png") 10px center no-repeat;
+  background: url("./assets/images/logotype-nhs-colour.png") 10px center no-repeat;
   padding-left: 95px;
 }
 
@@ -3444,7 +3444,6 @@ a.text-dark:hover {
 }
 
 .addhours {
-  background: url("./assets/images/plus.png") no-repeat;
   background-size: 14px 16px;
   background-position: 1px 4px;
   padding-left: 0.9em;
@@ -3652,6 +3651,8 @@ body {
   padding: 0;
 }
 
+
+
 /* component styles */
 
 .hide:not(.match-in-children) {
@@ -3776,3 +3777,4 @@ body {
   margin: 0;
   padding: 0;
 }
+/*# sourceMappingURL=main.css.map*/
