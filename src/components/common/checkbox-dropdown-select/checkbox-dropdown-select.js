@@ -4,7 +4,7 @@ import cn from 'classnames/bind';
 import TreeManager from './tree-manager';
 import Tree from './tree';
 import Input from './input';
-import styles from '../../../../style/scss/main.scss';
+import styles from '../../../style/scss/main.scss';
 import _ from 'lodash';
 
 const cx = cn.bind(styles);

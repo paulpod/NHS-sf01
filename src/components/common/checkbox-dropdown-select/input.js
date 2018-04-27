@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames/bind';
 import debounce from 'lodash.debounce';
-import styles from '../../../../style/scss/main.scss';
+import styles from '../../../style/scss/main.scss';
 
 const cx = cn.bind(styles);
 

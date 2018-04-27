@@ -6,7 +6,7 @@ import Action from './action';
 import isEmpty from '../is-empty';
 import NodeLabel from './node-label';
 
-import styles from '../../../../../style/scss/main.scss';
+import styles from '../../../../style/scss/main.scss';
 import { getDataset } from '../dataset-utils';
 
 const cx = cn.bind(styles);

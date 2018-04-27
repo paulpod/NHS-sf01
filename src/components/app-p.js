@@ -11,10 +11,6 @@ import CookiesPage from './cookies-page';
 import HelpPage from './help-page';
 import PrivacyPolicyPage from './privacy-policy-page';
 
-import logo from '../logo.svg';
-import '../App.css';
-
-
 export default class App extends Component {
     render() {
         let cookieLink = {
@@ -27,7 +23,11 @@ export default class App extends Component {
                 <ScrollToTop>
                     <div>
                         <div id="stretch_wrapper">
-                            
+                            <div>
+                                <CookieBanner
+                                    message='This site uses cookies.' link={cookieLink}
+                                    onAccept={_.noop} cookie='user-has-accepted-cookies' />
+                            </div>
                             <SiteHeader />
                             <div className="container">
                                 <Row className="mt-4">

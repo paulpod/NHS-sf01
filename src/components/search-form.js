@@ -6,7 +6,7 @@ import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 import Button from 'react-bootstrap/lib/Button';
 import CheckboxDropdownSelect from './common/checkbox-dropdown-select/checkbox-dropdown-select';
 import { connect } from 'react-redux';
-import '../../style/scss/main.scss';
+import '../style/scss/main.scss';
 import { validPostcode, required } from '../utils/validation';
 import { FieldGroup } from './common/field_group';
 import GeolocationSelect from './common/geolocation_select';
@@ -135,6 +135,5 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(state => ({
-    initialValues: defaultData,
-    geolocation: state.geolocation
+    
 }), mapDispatchToProps)(searchReduxForm);
